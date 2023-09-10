@@ -1,0 +1,90 @@
+.category {
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+
+  &__notes-container {
+    border: 1px solid #efefef;
+    box-shadow: 0px 1px 4px 0px #00000029;
+    flex: 1;
+    width: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  &__create-note {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    margin-bottom: 0;
+    .input-label {
+      border-radius: 5px;
+      border: 1px solid #eaeaea;
+      max-width: 252px;
+      color: #aeadad;
+      display: flex;
+      align-items: center;
+      height: 32px;
+      padding: 0px 10px;
+      flex: 1;
+      gap: 10px;
+      max-width: 252px;
+      background-color: #fcfcfc;
+      input {
+        border: none;
+        &::placeholder {
+          color: #aeadad;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .create-note-button {
+      display: flex;
+      justify-content: space-between;
+      background-color: #71cf48;
+      border-radius: 5px;
+      // padding: 5px 10px;
+      color: white;
+      height: 32px;
+      max-width: 160px;
+      flex: 1;
+      margin-bottom: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(#71cf48, 10);
+        i {
+          border-left: 2px solid #71cf48;
+        }
+      }
+      p {
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      i {
+        border-left: 2px solid darken(#71cf48, 10);
+        width: 20%;
+        height: 100%;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__notes {
+    width: 100%;
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,47 @@
+.button {
+  width: 150px;
+  border: none;
+  height: 32px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  border-radius: 5px;
+  &--save {
+    background-color: #71cf48;
+    p {
+      border-right: 2px solid darken(#71cf48, 10);
+    }
+    &:hover {
+      background-color: darken(#71cf48, 10);
+      p {
+        border-right: 2px solid #71cf48;
+      }
+    }
+  }
+
+  &--delete {
+    background-color: #fe4c4a;
+    p {
+      border-right: 2px solid darken(#fe4c4a, 10);
+    }
+    &:hover {
+      background-color: darken(#fe4c4a, 10);
+      p {
+        border-right: 2px solid #fe4c4a;
+      }
+    }
+  }
+  p {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  i {
+    width: 20%;
+  }
+}

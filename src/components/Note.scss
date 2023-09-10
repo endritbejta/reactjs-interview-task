@@ -1,0 +1,78 @@
+.note {
+  // flex: 1.5;
+  width: 60%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 1px 4px 0px #00000029;
+
+  &__title,
+  &__text {
+    border: none;
+
+    width: 100%;
+    font-family: inherit;
+    height: min-content;
+    word-wrap: break-word;
+    overflow: hidden;
+    resize: none;
+
+    &:focus {
+      outline: none;
+      // border: none;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+  }
+  &__text {
+    flex: 1;
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    &__button {
+      width: 150px;
+      border: none;
+      height: 32px;
+      padding: 0 5px;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      color: white;
+      border-radius: 5px;
+      i {
+        align-self: center;
+        padding: 0 5px;
+        border-left: 1px solid gray;
+      }
+      p {
+        align-self: center;
+      }
+
+      &--cancel {
+        background-color: red;
+        &:hover {
+          background-color: darken(red, 10);
+        }
+      }
+
+      &--save {
+        background-color: #71cf48;
+        &:hover {
+          background-color: darken(#71cf48, 10);
+        }
+      }
+    }
+  }
+}

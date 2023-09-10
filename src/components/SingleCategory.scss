@@ -1,0 +1,26 @@
+.single-category {
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #1264a3;
+  color: white;
+  text-decoration: none;
+  p {
+    flex: 1;
+  }
+  i {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f8f8fa;
+    color: #323338;
+
+    i:last-of-type {
+      transform: rotate(-90deg);
+    }
+  }
+}

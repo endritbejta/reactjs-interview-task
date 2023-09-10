@@ -1,0 +1,29 @@
+.create-note {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1607843137);
+  textarea {
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+    &:last-of-type {
+      flex: 1;
+    }
+  }
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
